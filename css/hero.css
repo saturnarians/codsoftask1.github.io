@@ -1,0 +1,91 @@
+.hero{
+  background-image:url('../images/hero.jpeg');
+  background-color: #0000;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 20px 50px 10px 40px;
+ 
+}
+
+/* using sudo elements for hero overlay */
+
+.hero::before{
+  content: '';
+  position:absolute;
+  background: #000000AB;
+  height: 100%;
+  width: 100%; 
+  z-index: 1;
+  right:2px;
+  top:1px;
+}
+
+.hero-text{
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  font-weight:600;
+  top: 30%;
+}
+
+.hero-vertical {
+  border-left:4px solid #c471f5;
+  height: 100%;
+  padding-left:10px;
+}
+
+.hero-text p{
+  font-size: 12px;
+  
+  
+}
+
+.hero-text p:first-of-type{
+  padding: 15px 0px;
+  font-size: 20px;
+}
+
+.hero-text p:last-of-type{
+  padding:20px 5px;
+}
+
+h1{
+  font-size: 45px;
+}
+
+
+.hero-btn{
+  display: flex;
+  gap: 20px;
+}
+
+.hero-btn button{
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.hero-btn button:first-of-type{
+  background:linear-gradient(to left,#c471f5 0%, #fa71cd 100%);
+  color: #ffffff;
+  border: 1px solid transparent;
+}
+
+.hero-btn button:last-of-type{
+  background: transparent;
+  color:#ffffff;
+  border:1px solid #ffffff;
+}
+
+@media (min-width:682px){ 
+  
+  .hero {
+     height: 482px;
+  }
+  }
