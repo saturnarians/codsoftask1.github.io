@@ -4,8 +4,7 @@
     width:100%;
     padding: 20px 50px 10px 40px;
     display:flex;
-    flex-wrap: wrap; 
-    /* gap:10px;  */
+    gap:.3em;
      
 }
 
@@ -103,12 +102,11 @@ button.about-btn {
     cursor: pointer;
 }
 
-@media (max-width: 900px) {
-
-}
 
 
-@media only screen and (max-width: 768px) {
+
+/*phone*/
+@media only screen and (min-width:200px)and (max-width:600px){
         .about-container {
         display:flex;
         flex-wrap: wrap;
@@ -125,10 +123,25 @@ button.about-btn {
         padding:5px 5px 10px 0;
         text-align:center;
         letter-spacing: .1em;
-        line-height: 1.2em;
-        
-
-       
+        line-height: 1.2em;   
         
     }
+}
+
+
+/*Tablet*/
+@media only screen and (min-width:601px)and (max-width:900px){
+/*     .about-container img {
+    position:relative;
+    top:1em;
+} */
+    
+}
+
+/*Medium Siz Laptop*/
+@media only screen and (min-width:901px)and (max-width:1199px) {
+   .about-container img {
+    position:relative;
+    top:-3em;
+}
 }
