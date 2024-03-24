@@ -23,7 +23,7 @@
 }
   
 .about-text {
-    width:65%;
+    width:100%;
     position:relative;
     z-index: 1;
 
@@ -68,6 +68,7 @@
     width:100%;
     letter-spacing: 1px;
    line-height: 20.11px;
+/*     text-align: center; */
 
    
     
@@ -122,6 +123,10 @@ button.about-btn {
 
     .about-container p{
         padding:5px 5px 10px 0;
+        text-align:center;
+        letter-spacing: .1em;
+        line-height: 1.2em;
+        
 
        
         
