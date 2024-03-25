@@ -1,7 +1,7 @@
 /* header and navbar */
 
 .header{
-/*     border-bottom: 1px solid #f5f5f7; */
+    border-bottom: 1px solid #f5f5f7;
 } 
 
 
@@ -108,6 +108,8 @@ button.btn-header {
 
 .nav-link:hover{ 
     color: purple;
+    border:1px solid #fff;
+    background-color:purple;
 }
   
   .search-container {
@@ -209,42 +211,49 @@ button.btn-header {
 @media only screen and (min-width:601px)and (max-width:900px){
     
         .nav-menu {
-        margin-left: -250px;
-       
+         position: absolute;
+         left:25em;
       }
-
+    
+    .nav-item {
+        width:100%;
+        padding:6px;
+       
+    }
    .topcontact {
   display: flex;
   justify-content: space-between;
-  gap: 15px;
+  gap: 10px;
   padding: 10px 5px 0 0px;
-  position: absolute;
-  right: 230px;
+  position: relative;
+  right:30px;
+  font-size:1em;
 }
 
 button.btn-header {
     background: linear-gradient(to left,#c471f5 0%, #fa71cd 100%);;
-    font-size: 12px;
+    font-size: 10px;
     border-radius: 2em;
     border:1px solid #f5f5f7;
     padding: 10px;
     color: antiquewhite;
     font-weight: 600;
-    margin:5px 60px;
+    margin:5px 30px;
 }
 
 .top-media-icons a .header-icon{
     border:1px solid azure;
-    padding: 3px;
+    padding: 2px;
     position:relative;
-    right:20px;
+    right:30px;
     margin-top: 12px;
-    width: 24px
+    width: 20px
 }
 
-/* .topcontact {
-        display:none;
-      } */
+.nav-link{
+    font-size: 12px;
+    width:10vw
+}
 }
 
 /*Medium Siz Laptop*/
